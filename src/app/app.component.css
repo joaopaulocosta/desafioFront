@@ -7,13 +7,25 @@ app-menu{
 
 #div_table_graphic{
     display: inline-block;
-    width: 80%;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 app-graphic{
     display: block;
+    text-align: center;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
 }
 
-app-table{
+app-tableatendplan{
     display: block;
+    margin-top: 15px;
+}
+
+p-chart{
+    margin: auto;
 }

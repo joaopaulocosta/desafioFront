@@ -15,17 +15,21 @@ export class MenuComponent implements OnInit {
         ngOnInit() {
             this.items = [
                 {
-                    label: 'Tela 1', icon: 'fa fa-fw fa-check',
+                  label: 'Tela Princípal', icon: 'pi pi-fw pi-home',
                 },
                 {
-                  label: 'Tela 2', icon: 'fa fa-fw fa-check',
+                  label: 'Atendimentos', icon: 'pi pi-fw pi-briefcase',
                 },
                 {
-                  label: 'Tela 3', icon: 'fa fa-fw fa-check',
+                  label: 'Relatórios', icon: 'pi pi-fw pi-chart-bar',
                 },
                 {
-                  label: 'Tela 4', icon: 'fa fa-fw fa-check',
+                  label: 'Configurações', icon: 'pi pi-fw pi-cog',
                 },
+                {
+                  label: 'Sair', icon: 'pi pi-fw pi-sign-out',
+                },
+
             ];
         }
 

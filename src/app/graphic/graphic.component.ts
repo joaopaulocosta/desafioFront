@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AtendimentosPlanejadosService } from '../services/antendimentosPlanejados.service';
 
 @Component({
   selector: 'app-graphic',
@@ -7,25 +8,29 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GraphicComponent implements OnInit {
   data: any;
+  options: any;
 
-  constructor() {
-      this.data = {
-          labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+  constructor(private atendPlanService: AtendimentosPlanejadosService ) {
+
+        this.data = {
+          labels: this.atendPlanService.getAllDates(),
           datasets: [
               {
-                  label: 'My First dataset',
+                  label: 'Ocorrências',
                   backgroundColor: '#42A5F5',
                   borderColor: '#1E88E5',
-                  data: [65, 59, 80, 81, 56, 55, 40]
+                  data: this.atendPlanService.getAllValuesDifference()
               },
-              {
-                  label: 'My Second dataset',
-                  backgroundColor: '#9CCC65',
-                  borderColor: '#7CB342',
-                  data: [28, 48, 40, 19, 86, 27, 90]
-              }
           ]
-      }
+        }
+        
+        this.options = {
+            title: {
+                display: true,
+                text: 'Diferença entre Capacidade e Atendimento Realizado',
+                fontSize: 16
+            }
+        };
   }
 
   ngOnInit() {
