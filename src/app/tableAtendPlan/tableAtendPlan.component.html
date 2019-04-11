@@ -1,0 +1,22 @@
+<p-table [value]="atendimentosPlanejados">
+    <ng-template pTemplate="header">
+        <tr>
+            <th>Data</th>
+            <th>Demanda</th>
+            <th>Capacidade</th>
+            <th>Atendimento Planejado</th>
+            <th>Atendimento Realizado</th>
+            <th>Desvio</th>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-atendPlan>
+        <tr>
+            <td>{{atendPlan.data}}</td>
+            <td>{{atendPlan.demanda}}</td>
+            <td>{{atendPlan.capacidade}}</td>
+            <td>{{atendPlan.atendimentoPlanejado}}</td>
+            <td>{{atendPlan.atendimentoRealizado}}</td>
+            <td>{{atendPlan.desvio}}</td>
+        </tr>
+    </ng-template>
+</p-table>
