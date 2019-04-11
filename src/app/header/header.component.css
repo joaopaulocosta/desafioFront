@@ -3,3 +3,19 @@ header{
     width: 100%;
     background-color: #068C8A;
 }
+
+#textLogo{
+    font-family: Montserrat;
+    color: white;
+    font-size: 22px;
+    display: inline-block;
+    vertical-align: super;
+}
+
+i{
+    font-size: 50px;
+    display: inline-block;
+    color: white;
+    margin-top: 10px;
+    margin-left: 50px;
+}

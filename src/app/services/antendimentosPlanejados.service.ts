@@ -27,7 +27,7 @@ export class AtendimentosPlanejadosService {
         {
             "data": "03/01/2019",
             "demanda": 53,
-            "capacidade": 60,
+            "capacidade": 62,
             "atendimentoPlanejado": 55,
             "atendimentoRealizado": 54,
             "desvio": 1
@@ -43,7 +43,7 @@ export class AtendimentosPlanejadosService {
         {
             "data": "05/01/2019",
             "demanda": 33,
-            "capacidade": 60,
+            "capacidade": 50,
             "atendimentoPlanejado": 55,
             "atendimentoRealizado": 32,
             "desvio": 13
@@ -51,7 +51,7 @@ export class AtendimentosPlanejadosService {
         {
             "data": "06/01/2019",
             "demanda": 53,
-            "capacidade": 60,
+            "capacidade": 45,
             "atendimentoPlanejado": 55,
             "atendimentoRealizado": 54,
             "desvio": 1
