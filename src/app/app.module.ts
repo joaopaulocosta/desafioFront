@@ -9,6 +9,9 @@ import {ChartModule} from 'primeng/chart';
 import { GraphicComponent } from './graphic/graphic.component';
 import {TableAtendPlanComponent } from './tableAtendPlan/tableAtendPlan.component';
 import {TableModule} from 'primeng/table';
+import {PaginatorModule} from 'primeng/paginator';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 import {AtendimentosPlanejadosService} from './services/antendimentosPlanejados.service'
 
 @NgModule({
@@ -24,7 +27,9 @@ import {AtendimentosPlanejadosService} from './services/antendimentosPlanejados.
     MegaMenuModule,
     ChartModule,
     TableModule,
-    AtendimentosPlanejadosService
+    AtendimentosPlanejadosService,
+    PaginatorModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

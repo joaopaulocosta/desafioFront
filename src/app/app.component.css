@@ -1,0 +1,19 @@
+app-menu{
+    display: inline-block;
+    width: 20%;
+    vertical-align: top;
+    
+}
+
+#div_table_graphic{
+    display: inline-block;
+    width: 80%;
+}
+
+app-graphic{
+    display: block;
+}
+
+app-table{
+    display: block;
+}
